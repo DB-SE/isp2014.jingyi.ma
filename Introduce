@@ -1,0 +1,11 @@
+An EnterpriseWebsite includes 5 mandatory features(HomePage,Language,Introduction,News,Products) and one optional feature(E-Commerce).
+
+There are two style of the homepage, we can choose exactly one feature, EasyStyle or ComplexStyle.
+
+As a mandatory feature, Feature Introduction has the information about this Company.
+
+There are two ways to show the news (hotnews, NewsList) .
+
+Some Products could be displayed with Advertisements or all products could be displayed in alphabetical order.
+
+Not all companies need an E-Commerce page. So it’s an optional feature. If it’s needed, there will be a online shopping pages. 
