@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="EnterpriseWebsite">
+				<alt mandatory="true" name="Homepage">
+					<feature mandatory="true" name="EasyStyle"/>
+					<feature mandatory="true" name="ComplexStyle"/>
+				</alt>
+				<or mandatory="true" name="Language">
+					<feature mandatory="true" name="Deutsch"/>
+					<feature mandatory="true" name="Englisch"/>
+				</or>
+				<feature mandatory="true" name="Introduction"/>
+				<or mandatory="true" name="News">
+					<feature mandatory="true" name="HotNews"/>
+					<and mandatory="true" name="NewsList">
+						<or mandatory="true" name="DetailedNews">
+							<feature mandatory="true" name="Text"/>
+							<feature mandatory="true" name="Audio"/>
+							<feature mandatory="true" name="Video"/>
+						</or>
+					</and>
+				</or>
+				<or mandatory="true" name="Products">
+					<and mandatory="true" name="HighLights">
+						<feature mandatory="true" name="Ads"/>
+					</and>
+					<and mandatory="true" name="ProductList">
+						<feature mandatory="true" name="ProductDetail"/>
+					</and>
+				</or>
+				<feature name="E-Commerce"/>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="false" Features="true" Redundant="false" Tautology="false"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
